@@ -1,20 +1,12 @@
-This library is distributed under the terms of the zlib license:
+Suivre les étapes pour pouvoir afficher l'image SDL en FPC :
 
-  This software is provided 'as-is', without any express or implied
-  warranty.  In no event will the authors be held liable for any damages
-  arising from the use of this software.
+1 - Prenez tous les fichiers sauf Chapter3_SDL2.pas et .exe et l'image
+2- Mettez les fichiers selectionné dans votre dossier FPC (C:\FPC\3.0.0\bin\i386-win32)
+3 - Ensuite prenez l'image mettez la dans un dossier image par exemple peu importe l'emplacement
+4 - Crée un nouveau programme en pascal, le compiler et incomporé le code du .pas dans votre programme
+5 - Dans le code changer le chemin de l'image par votre chemin a cette ligne :  
+sdlTexture1 := IMG_LoadTexture( sdlRenderer, 'trump.bmp' );
+						ici
 
-  Permission is granted to anyone to use this software for any purpose,
-  including commercial applications, and to alter it and redistribute it
-  freely, subject to the following restrictions:
 
-  1. The origin of this software must not be misrepresented; you must not
-     claim that you wrote the original software. If you use this software
-     in a product, an acknowledgment in the product documentation would be
-     appreciated but is not required.
-  2. Altered source versions must be plainly marked as such, and must not be
-     misrepresented as being the original software.
-  3. This notice may not be removed or altered from any source distribution.
-
-The source is available from the SDL website:
-http://www.libsdl.org/projects/SDL_image
+6-compiler et normalement l'image devrait s'afficher ;)
